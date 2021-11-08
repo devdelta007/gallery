@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_name_ascending"
+        android:title="Name Ascending" />
+
+    <item
+        android:id="@+id/menu_name_descending"
+        android:title="Name Descending" />
+
+    <item
+        android:id="@+id/menu_big_to_small"
+        android:title="Size Ascending" />
+
+    <item
+        android:id="@+id/menu_small_to_big"
+        android:title="Size Descending" />
+
+
+    <item
+        android:id="@+id/menu_time_newest"
+        android:title="Time Ascending" />
+
+    <item
+        android:id="@+id/menu_time_oldest"
+        android:title="Time Descending" />
+
+</menu>

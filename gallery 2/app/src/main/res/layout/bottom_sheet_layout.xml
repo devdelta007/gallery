@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/bottomSheet"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentRelative"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_bg_white"
+    android:padding="16dp"
+
+
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    >
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New collection"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:id="@+id/newCollection"
+        android:layout_centerHorizontal="true"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:hint="ADD A TITLE"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:textColor="?attr/colorOnSecondary"
+        android:textColorHint="?attr/colorOnSecondary"
+        android:textColorHighlight="?attr/colorOnSecondary"
+        android:inputType="text"
+        android:imeOptions="actionGo"
+        android:nextFocusDown="@id/save"
+        android:layout_below="@id/newCollection"
+        android:layout_marginBottom="20dp"></EditText>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/add"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:textColor="?attr/colorOnSecondary"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/cancel_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save"
+        android:textColor="?attr/colorOnSecondary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="290dp"
+        android:text="Cancel" />
+</RelativeLayout>
+</FrameLayout>

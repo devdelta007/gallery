@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/nestedRelative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/CollectionsImageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:padding="1dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CollectionName"
+        android:text="Uttran"
+        android:layout_below="@+id/CollectionsImageview"
+        android:layout_alignLeft="@+id/CollectionsImageview"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:textColor="?attr/colorOnSecondary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Subtitle"
+        android:text="2 items"
+        android:layout_alignLeft="@id/CollectionName"
+        android:layout_below="@id/CollectionName"
+        android:textColor="?attr/colorOnSecondary"
+        ></TextView>
+</RelativeLayout>

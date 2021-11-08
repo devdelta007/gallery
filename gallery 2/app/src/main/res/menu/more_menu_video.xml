@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_delete"
+        android:title="Delete"></item>
+
+    <item
+        android:id="@+id/menu_copy"
+        android:title="Copy"></item>
+
+    <item
+        android:id="@+id/menu_move"
+        android:title="Move"></item>
+
+    <item
+        android:id="@+id/menu_details"
+        android:title="Details"></item>
+    <item
+        android:id="@+id/menu_set_as_wallpaper"
+        android:title="Set as wallpaper"
+        android:visible="false"/>
+
+</menu>

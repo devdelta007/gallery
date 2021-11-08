@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gallery.picture.foto.utils.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_centerHorizontal="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_main_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:cardBackgroundColor="@color/card_color_grid"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/_7sdp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_folder_grid"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/theme_color"
+                        android:src="@drawable/ic_folder"
+                        android:visibility="visible" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_folder_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_folder"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/_3sdp">
+
+                        <!-- <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                             android:id="@+id/iv_image"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"/>-->
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_mime_type_grid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:singleLine="true"
+                                android:text="MP3"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans_color_gray"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:paddingBottom="@dimen/_1sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_folder_name_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="middle"
+                        android:text="File name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_date_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:visibility="gone"
+                        android:text="date"
+                        android:textColor="@color/gray_text"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="normal"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="7"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_check_grid"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_uncheck"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/gray_text"
+                        android:src="@drawable/ic_radio_btn_unseleted" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_check_grid"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/theme_color"
+                        android:src="@drawable/ic_radio_btn_selected" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_fav_image"
+                    android:layout_width="@dimen/_11sdp"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_baseline_favorite_24"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    app:tint="@color/theme_color" />
+
+                <ImageView
+                    android:id="@+id/iv_fav_image_file"
+                    android:layout_width="@dimen/_14sdp"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_baseline_favorite_24"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</com.gallery.picture.foto.utils.SquareFrameLayout>

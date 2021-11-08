@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:ns2="http://schemas.android.com/apk/res-auto">
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Toolbar.TitleText1" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">34sp</item>
+    </style>
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">58sp</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">30sp</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="ExpandedSubtitleAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">54sp</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CollapsedSubtitleAppBar" parent="@android:style/TextAppearance.Medium">
+    <item name="android:textSize">30sp</item>
+
+    <item name="android:textStyle">normal</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">50%</item>
+
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize5Percent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+    <item name="cornerSize">10%</item>
+    </style>
+    <style name="Theme.Design.Light.NoActionBar1">
+
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+<item name="android:windowAnimationStyle">@style/CustombottomSheetAnimation</item>
+    </style>
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+       <item name="behavior_peekHeight">380dp</item>
+    </style>
+
+    <style name="CustombottomSheetAnimation" parent="Animation.Design.BottomSheetDialog">
+    <item name="android:windowEnterAnimation">@anim/design_custom_sheet_in</item>
+    <item name="android:windowExitAnimation">@anim/design_custom_sheet_out</item>
+    </style>
+<!--
+    <style name="CustomBottomSheetDialogTheme1" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle1</item>
+        <item name="android:windowAnimationStyle">@style/CustombottomSheetAnimation1</item>
+    </style>
+    <style name="CustomBottomSheetStyle1" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+
+    <style name="CustombottomSheetAnimation1" parent="Animation.Design.BottomSheetDialog">
+        <item name="android:windowEnterAnimation">@anim/design_custom_sheet_in</item>
+        <item name="android:windowExitAnimation">@anim/design_custom_sheet_out</item>
+    </style>-->
+</resources>

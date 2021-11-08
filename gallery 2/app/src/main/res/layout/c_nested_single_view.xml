@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/nestedRelative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <!--<androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/CollectionsImageview"
+        >
+    <ImageView
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+
+        android:layout_margin="5dp"
+
+
+android:id="@+id/CollectionsImageview1"
+
+        android:scaleType="center"
+        android:background="@drawable/roundimage"
+        ></ImageView>
+    </androidx.cardview.widget.CardView>-->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/CollectionsImageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:padding="1dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CollectionName"
+
+        android:layout_below="@+id/CollectionsImageview"
+        android:layout_alignLeft="@+id/CollectionsImageview"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:textColor="?attr/colorOnSecondary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Subtitle"
+
+        android:layout_alignLeft="@id/CollectionName"
+        android:layout_below="@id/CollectionName"
+        android:textColor="?attr/colorOnSecondary"
+        ></TextView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/CollectionsImageview2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/Subtitle"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:padding="1dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CollectionName2"
+
+        android:layout_below="@+id/CollectionsImageview2"
+        android:layout_alignLeft="@+id/CollectionsImageview2"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:textColor="?attr/colorOnSecondary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Subtitle2"
+
+        android:layout_alignLeft="@id/CollectionName2"
+        android:layout_below="@id/CollectionName2"
+        android:textColor="?attr/colorOnSecondary"
+        ></TextView>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apptoolbar"
+        android:theme="@style/Theme.Gallery"
+        android:background="?attr/colorPrimaryVariant"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Theme.Gallery"
+            android:background="?attr/colorPrimaryVariant"
+
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.Gallery"
+                android:background="?attr/colorPrimaryVariant"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bak_button"
+                    android:id="@+id/backButton"
+                    android:layout_marginTop="10dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/collections"
+                    android:text="My collections"
+
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/backButton"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/collection"
+                    android:text="217 Collections"
+                    android:layout_alignLeft="@+id/collections"
+                    android:layout_below="@+id/collections"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/more_vert_viewall"
+                    android:src="@drawable/more_vert"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    ></ImageView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apptoolbar"
+        android:layout_margin="10dp"
+        android:id="@+id/ViewAllRecyclerView"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

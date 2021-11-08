@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gallery.picture.foto.utils.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/_0.5sdp"
+
+        app:cardBackgroundColor="@color/card_color_grid"
+
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/ll_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/ivimg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</com.gallery.picture.foto.utils.SquareFrameLayout>

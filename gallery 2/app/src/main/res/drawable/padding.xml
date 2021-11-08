@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="50dp"
+        android:height="40dp">
+
+        <bitmap android:src="@drawable/ic_baseline_more_vert_24" />
+
+    </item>
+</layer-list>

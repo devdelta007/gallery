@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.SelectionImageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/apptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondaryVariant"
+        android:theme="@style/Theme.Gallery"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="?attr/colorSecondaryVariant"
+
+            android:theme="@style/Theme.Gallery"
+            app:titleTextColor="@color/black"
+
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/toolbar1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorSecondaryVariant">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/bak_button"></ImageView>
+
+                <TextView
+                    android:id="@+id/collections"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/backButton"
+                    android:textSize="20sp"></TextView>
+
+
+
+                <TextView
+                    android:id="@+id/create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginRight="30dp"
+
+                    android:padding="5dp"
+                    android:text="Create"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:textSize="20sp"></TextView>
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apptoolbar"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

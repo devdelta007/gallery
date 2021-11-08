@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_sort"
+        android:title="Sort">
+    </item>
+
+    <item
+        android:id="@+id/menu_create_folder"
+        android:title="Create folder">
+    </item>
+
+    <item
+        android:id="@+id/menu_hidden"
+        android:title="Show hidden files">
+    </item>
+
+</menu>

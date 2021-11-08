@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_dialog_bg_white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_1sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:text="Sort by"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_Name_Asc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:text="Name"
+                android:textColor="?attr/colorOnSecondary"
+                android:textSize="@dimen/_15sdp"
+                app:buttonTint="@color/theme_color" />
+
+            <RadioButton
+                android:id="@+id/radio_Name_Des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:text="Name Descending"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                app:buttonTint="@color/theme_color" />
+
+            <RadioButton
+                android:id="@+id/radio_Size_Asc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:text="Size"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="?attr/colorOnSecondary"
+                app:buttonTint="@color/theme_color" />
+
+            <RadioButton
+                android:id="@+id/radio_Size_Des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:text="Size Descending"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                app:buttonTint="@color/theme_color" />
+
+            <RadioButton
+                android:id="@+id/radio_Time_Asc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:text="Time"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="?attr/colorOnSecondary"
+                app:buttonTint="@color/theme_color" />
+
+            <RadioButton
+                android:id="@+id/radio_Time_Dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:text="Time Descending"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                app:buttonTint="@color/theme_color" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/gray_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=".................................................................................................."
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/gray_text"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/group_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_ascending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:text="Ascending"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="visible"
+                android:textColor="?attr/colorOnSecondary"
+                app:buttonTint="@color/theme_color" />
+
+            <RadioButton
+                android:id="@+id/radio_descending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:text="Descending"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="visible"
+                android:textColor="?attr/colorOnSecondary"
+                app:buttonTint="@color/theme_color" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="Cancel"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_done"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="Done"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

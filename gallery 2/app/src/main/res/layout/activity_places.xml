@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apptoolbar"
+        android:theme="@style/Theme.Gallery"
+        android:background="?attr/colorPrimaryVariant"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryVariant"
+            android:paddingVertical="5dp"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bak_button"
+                android:id="@+id/backButton"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/collections"
+
+
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/backButton"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/collection"
+
+                android:layout_alignLeft="@+id/collections"
+                android:layout_below="@+id/collections"
+                ></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/more_vert"
+                android:src="@drawable/more_vert"
+                android:paddingVertical="10dp"
+                android:paddingRight="5dp"
+                android:layout_alignParentRight="true"
+                ></ImageView>
+
+
+
+        </RelativeLayout>
+        <include layout="@layout/layout_select" />
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apptoolbar"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/layout_bottom_option" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

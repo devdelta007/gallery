@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lout_selected"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_alignParentTop="true"
+
+    android:theme="@style/Theme.Gallery"
+    android:background="?attr/colorSecondary"
+
+
+    android:visibility="gone"
+    >
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/gray_divider"
+        android:layout_alignParentTop="true"/>-->
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_6sdp"
+
+
+        android:src="@drawable/close"
+         />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ll_favourite"
+        android:layout_toRightOf="@+id/iv_close"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Selected"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:id="@+id/ll_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ll_check_all"
+        android:layout_marginRight="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_fav_unfill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="?attr/colorOnSecondary"
+            android:src="@drawable/ic_fav_unfill" />
+
+        <ImageView
+            android:id="@+id/iv_fav_fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_favorite_24"
+
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_check_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_uncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="?attr/colorOnSecondary"
+            android:src="@drawable/ic_radio_btn_unseleted" />
+
+        <ImageView
+            android:id="@+id/iv_check_all"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_radio_btn_selected1"
+            android:background="@drawable/ic_radio_btn_unseleted"
+            android:visibility="gone"
+             />
+
+    </RelativeLayout>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/gray_divider"
+        android:layout_alignParentBottom="true"/>-->
+
+</RelativeLayout>
